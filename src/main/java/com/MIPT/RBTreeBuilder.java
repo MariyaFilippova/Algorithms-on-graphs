@@ -1,4 +1,4 @@
-package com;
+package com.MIPT;
 
 import java.io.InputStream;
 import java.io.OutputStream;

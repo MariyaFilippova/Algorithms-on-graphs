@@ -1,6 +1,6 @@
 
 import org.junit.Test;
-import com.Dijkstra;
+import com.MIPT.Dijkstra;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

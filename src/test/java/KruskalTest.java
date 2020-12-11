@@ -1,3 +1,4 @@
+import com.MIPT.Kruskal;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -12,7 +13,7 @@ public class KruskalTest {
     public void positiveAnswerFourEdges() {
         ByteArrayInputStream input = new ByteArrayInputStream(("4\n4\n1\n0\n1\n2\n1\n2\n3\n2\n3\n10\n3\n0").getBytes());
         final ByteArrayOutputStream output = new ByteArrayOutputStream();
-        new com.Kruskal(input, output).run();
+        new Kruskal(input, output).run();
         System.setOut(new PrintStream(output));
         assertThat(output.toString(), containsString(
                 "Start: 0 Weight: 1 End: 1\n" +
@@ -24,7 +25,7 @@ public class KruskalTest {
     public void positiveAnswerSevenEdges() {
         ByteArrayInputStream input = new ByteArrayInputStream(("7\n6\n1\n0\n5\n13\n0\n4\n0\n4\n1\n1\n1\n2\n5\n2\n3\n2\n4\n3\n10\n1\n3").getBytes());
         final ByteArrayOutputStream output = new ByteArrayOutputStream();
-        new com.Kruskal(input, output).run();
+        new Kruskal(input, output).run();
         System.setOut(new PrintStream(output));
         assertThat(output.toString(), containsString(
                 "Start: 4 Weight: 0 End: 1\n" +
